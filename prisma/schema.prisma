@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id String @id @unique
+
+  email        String
+  firstName    String
+  lastName     String
+  profileImage String?
+  Home         Home[]
+  Favorite     Favorite[]
+  Reservation  Reservation[]
+}
+
+model Home {
+  id String @id @default(uuid())
+
+  title        String?
+  description  String?
+  guests       String?
+  bedrooms     String?
+  bathrooms    String?
+  country      String?
+  photo        String?
+  price        Int?
+  categoryName String?
+  Favorite     Favorite[]
+  Reservation  Reservation[]
+
+  addedCategory    Boolean @default(false)
+  addedDescription Boolean @default(false)
+  addedLoaction    Boolean @default(false)
+
+  createdAT DateTime @default(now())
+  User      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+}
+
+model Favorite {
+  id String @id @default(uuid())
+
+  User   User?   @relation(fields: [userId], references: [id])
+  userId String?
+  Home   Home?   @relation(fields: [homeId], references: [id])
+  homeId String?
+
+  createAt DateTime @default(now())
+}
+
+model Reservation {
+  id String @id @default(uuid())
+
+  startDate DateTime
+  endDate   DateTime
+  createdAt DateTime @default(now())
+
+  User   User?   @relation(fields: [userId], references: [id])
+  userId String?
+  Home   Home?   @relation(fields: [homeId], references: [id])
+  homeId String?
+}
