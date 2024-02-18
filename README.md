@@ -8,13 +8,13 @@
 - 📧 Business ONLY: jan@alenix.de 
 
 Resources used:
-Next.js: https://nextjs.org
-Kinde: https://dub.sh/xeU8r3v
-Tailwind.css: https://tailwindcss.com
-Shadcn/UI: https://ui.shadcn.com
-Prisma: https://prisma.io
-Supabase: https://supabase.com
-React-date-range: https://www.npmjs.com/package/react-date-range
+- Next.js: https://nextjs.org
+- Kinde: https://dub.sh/xeU8r3v
+- Tailwind.css: https://tailwindcss.com
+- Shadcn/UI: https://ui.shadcn.com
+- Prisma: https://prisma.io
+- Supabase: https://supabase.com
+- React-date-range: https://www.npmjs.com/package/react-date-range
 
 Features: 
 
