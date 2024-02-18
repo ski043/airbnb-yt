@@ -3,7 +3,7 @@
 - 🚀 Kinde Auth: https://dub.sh/xeU8r3v
 
 
-- 👨🏻‍💻 GitHub Repository: https://www.janmarshal.com/courses/build-a-next-js-14-blog-or-react-sanity-io-tailwind-css-shadcn-ui
+- 👨🏻‍💻 GitHub Repository: https://www.janmarshal.com/courses/create-an-airbnb-clone-with-next-js-14-kinde-supabase-prisma-and-tailwind
 - 🌍 My Website: https://www.janmarshal.com
 - 📧 Business ONLY: jan@alenix.de 
 
