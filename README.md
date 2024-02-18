@@ -27,7 +27,7 @@ Features:
 - 💨 Prisma ORM
 - 🎨 Styling with Tailwindcss and shadcn UI
 - Deployment to Vercel
-- 📅 Calender Implementation
+- 📅 Calendar Implementation
 - 📍 Dynamic Map Implementation
 - 📒 Reservation System
 - 🧠 Filter Bar
